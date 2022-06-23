@@ -1,0 +1,68 @@
+.userSignUpFormBox{
+    background-color: blue;
+    box-shadow: 5px 5px cornflowerblue;
+    border-radius: 2%;
+    margin: 10% 0% 0% 25%;
+    width: 50%;
+    height: 80%;
+    padding: 2% 0% 5% 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.userSignUpFormBox form, h3{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+}
+
+.userSignUpFormBox form span{
+    margin-top: 5%;
+}
+
+.userSignUpFormBox form span input{
+    background-color: rgb(57, 57, 167);
+    box-shadow: 3px 3px rgb(34, 34, 101);
+    border: none;
+    border-radius: 2%;
+    outline: none;
+    height: 40px;
+    width: 300px;
+    color: white;
+}
+.userSignUpFormBox form span.submitButton input{
+    background-color: rgb(219, 175, 240);
+    color: black;
+}
+
+.userSignUpFormBox form span input:hover{
+    background-color: rgb(57, 39, 74);
+}
+.userSignUpFormBox form span input:focus{
+    border: 2px solid yellow;
+    box-shadow: 3px 3px rgb(155, 155, 67);
+}
+
+@media only screen and (max-width: 990px){
+    .userSignUpFormBox{
+        width: 100%;
+        margin: 0%
+    }
+    form{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 450px){
+    .userSignUpFormBox{
+        width: 100%;
+        margin: 0%
+    }
+    .userSignUpFormBox form span label {
+        width: 300px;
+    }
+
+}
