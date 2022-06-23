@@ -23,17 +23,17 @@
 }
 
 .userSignUpFormBox form span input{
-    background-color: rgb(57, 57, 167);
+    background-color: rgb(185, 185, 245);
     box-shadow: 3px 3px rgb(34, 34, 101);
     border: none;
-    border-radius: 2%;
+    border-radius: 10px;
     outline: none;
     height: 40px;
     width: 300px;
     color: white;
 }
 .userSignUpFormBox form span.submitButton input{
-    background-color: rgb(219, 175, 240);
+    background-color: rgb(198, 118, 235);
     color: black;
 }
 
@@ -42,6 +42,7 @@
 }
 .userSignUpFormBox form span input:focus{
     border: 2px solid yellow;
+    border-radius: 10px;
     box-shadow: 3px 3px rgb(155, 155, 67);
 }
 

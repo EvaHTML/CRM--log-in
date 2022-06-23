@@ -1,9 +1,90 @@
 
 
+/*Style de header empieza*/
+@import url('https://fonts.googleapis.com/css?family=Parisienne|Quicksand&display=swap');
 
-body{
-    background: radial-gradient(circle, rgba(67,66,77,1) 0%, rgba(166,158,163,1) 62%, rgba(153,146,152,1) 82%, rgba(171,164,168,1) 92%, rgba(182,175,178,1) 98%, rgba(186,178,181,0.8113839285714286) 100%);
+.container-header {
+	background-color: rgb(238, 61, 90);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: rgb(0, 0, 0);
 }
+
+.header-bar {
+	position: relative;
+	width: 50%;
+	min-width: 300px;
+	height: 50px;
+	border: 10px solid transparent;
+	border-top: 10px solid #fffa;
+	border-left: 10px solid #fffa;
+	box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25) inset;
+}
+.header-bar::after {
+	content: '';
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 30%;
+	height: 49px;
+	border: 10px solid transparent;
+	border-bottom: 10px solid #fffa;
+	border-right: 10px solid #fffa;
+	transition: 0.3s linear all;
+}
+.header-bar > .logo {
+	position: absolute;
+	top: calc(50% - 20px);
+	left: 10px;
+	transform: translateY(-50%);
+	color: #fffc;
+	font-family: 'Parisienne', cursive;
+	cursor: default;
+	user-select: none;
+}
+.slider-header {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+.slider-header > li {
+	display: inline-flex;
+	padding: 14px;
+	margin-left: 2px;
+	font-family: 'Quicksand', sans-serif;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.3s linear all;
+	user-select: none;
+}
+.slider-menu > li:hover {
+	color: #faa;
+	box-shadow: 0 50px 15px rgba(0, 0, 0, 0.15) inset;
+}
+.cmr-name {
+	position: fixed;
+	top: 10px;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 15px;
+	line-height: 30px;
+	background-color: #fff;
+	padding: 5px 10px;
+	border-radius: 25px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.cmr-name { font-family: "Quicksand"; }
+.cmr-name > img { height: 50px; }
+
+/*Style de header acaba*/
+
 /*Style para el main content de la página de inicio de las tres funcionalidades que ofrecemos ---- empieza*/
 section{
     display: flex;
@@ -29,7 +110,7 @@ section{
     padding: 0% 5% 5% 5%;
     text-align: justify;
     background: rgb(29,92,159);
-    background: linear-gradient(176deg, rgba(29,92,159,1) 0%, rgba(82,55,185,1) 53%, rgba(126,24,207,1) 97%);
+    background: linear-gradient(176deg, rgb(238, 61, 90, 1) 0%, rgb(120, 94, 224) 53%, rgb(207, 24, 158) 97%);
 
 }
 
@@ -78,3 +159,79 @@ section{
 }
 
 /*Style para el main content de la página de inicio de las tres funcionalidades que ofrecemos ---- acaba*/
+/*Style para el formulario de sign up empieza*/
+.userSignUpFormBox{
+    background-color: blue;
+    box-shadow: 5px 5px cornflowerblue;
+    border-radius: 2%;
+    margin: 10% 0% 0% 25%;
+    width: 50%;
+    height: 80%;
+    padding: 2% 0% 5% 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.userSignUpFormBox form, h3{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+}
+
+.userSignUpFormBox form span{
+    margin-top: 5%;
+}
+
+.userSignUpFormBox form span input{
+    background-color: rgb(185, 185, 245);
+    box-shadow: 3px 3px rgb(34, 34, 101);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    height: 40px;
+    width: 300px;
+    color: white;
+}
+.userSignUpFormBox form span.submitButton input{
+    background-color: rgb(198, 118, 235);
+    color: black;
+}
+
+.userSignUpFormBox form span input:hover{
+    background-color: rgb(57, 39, 74);
+}
+.userSignUpFormBox form span input:focus{
+    border: 2px solid yellow;
+    border-radius: 10px;
+    box-shadow: 3px 3px rgb(155, 155, 67);
+}
+
+@media only screen and (max-width: 990px){
+    .userSignUpFormBox{
+        width: 100%;
+        margin: 0%
+    }
+    form{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 450px){
+    .userSignUpFormBox{
+        width: 100%;
+        margin: 0%
+    }
+    .userSignUpFormBox form span label {
+        width: 300px;
+    }
+
+}
+/*Style para el formulario de sign up acaba*/
+
+a:link, a:visited{
+    text-decoration: none;
+    color: #fff;
+}
