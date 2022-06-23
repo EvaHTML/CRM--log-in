@@ -31,6 +31,7 @@
     height: 40px;
     width: 300px;
     color: white;
+    padding-left: 10px;
 }
 .userSignUpFormBox form span.submitButton input{
     background-color: rgb(198, 118, 235);
