@@ -1,5 +1,11 @@
+
+body {
+    background-color: rgb(253, 144, 163);
+}
+
+
 .userSignUpFormBox{
-    background-color: blue;
+    background-color: rgb(242, 81, 107);
     box-shadow: 5px 5px cornflowerblue;
     border-radius: 2%;
     margin: 10% 0% 0% 25%;
@@ -36,6 +42,7 @@
 .userSignUpFormBox form span.submitButton input{
     background-color: rgb(198, 118, 235);
     color: black;
+    width: 310px;
 }
 
 .userSignUpFormBox form span input:hover{
