@@ -26,7 +26,7 @@ section{
 }
 
 .functionDescription{
-    padding: 0% 5% 0 5%;
+    padding: 0% 5% 5% 5%;
     text-align: justify;
     background: rgb(29,92,159);
     background: linear-gradient(176deg, rgba(29,92,159,1) 0%, rgba(82,55,185,1) 53%, rgba(126,24,207,1) 97%);
